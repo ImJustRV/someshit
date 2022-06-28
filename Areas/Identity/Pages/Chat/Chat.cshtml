@@ -1,0 +1,50 @@
+﻿@page
+@model MinaCoolProgekt.Areas.Identity.Pages.Chat.Chat
+@inject SignInManager<IdentityUser> SignInManager
+
+@{
+    ViewData["Title"] = "Чат лохов";
+    Layout = "_Layout";
+}
+
+@{
+    if (SignInManager.IsSignedIn(User))
+    {
+        <h3>@ViewData["Title"]</h3>
+
+        <div class="container">
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-2">Юзер</div>
+                <div class="col-4"><input type="text" id="userInput" value="@User.Identity?.Name" readonly="readonly"/></div>
+            </div>
+            <div class="row">
+                <div class="col-2">Мессаге</div>
+                <div class="col-4"><input type="text" id="messageInput" /></div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-6">
+                    <input type="button" id="sendButton" value="Атправить в памойку" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+        <script src="~/js/chat.js"></script>
+    }
+    else
+    {
+        <h1>Куда лезешь блять?</h1>
+        <img src="https://media.discordapp.net/attachments/619892232073379877/991118243173499010/IMG_4245.jpg" alt="Э бля :("/>
+    }
+}

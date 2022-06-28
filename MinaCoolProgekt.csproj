@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-MinaCoolProgekt-75EFBAE1-80AE-4612-AD31-06ADF2E34E09</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.3" />
+        <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.4.3" />
+        <PackageReference Include="Microsoft.AspNet.SignalR.Core" Version="2.4.3" />
+        <PackageReference Include="Microsoft.AspNet.SignalR.SystemWeb" Version="2.4.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.4" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.6" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.0-preview.5.22303.8" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Client.Core" Version="7.0.0-preview.5.22303.8" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="7.0.0-preview.5.22303.8" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.Json" Version="7.0.0-preview.5.22303.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.6">
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+          <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+          <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Pages\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Pages\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Pages\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Pages\Shared\_LoginPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Pages\Shared\_ValidationScriptsPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Pages\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Pages\_ViewStart.cshtml" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Регостер конфирме";
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+    <a id="confirm-link" href="@Model.EmailConfirmationUrl">Нажми сюда, и стань реальным держателем помойки, лах</a>
+</p>
+    }
+    else
+    {
+<p>
+        Розовое дилдо у вас на мыле.
+</p>
+    }
+}
+
