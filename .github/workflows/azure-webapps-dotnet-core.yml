@@ -24,6 +24,10 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: 'github.com/ImJustRV/someshit'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '6.0'                 # set this to the .NET Core version to use
 
+  name: Azure Login
+  uses: Azure/login@v1
+
+
 on:
   push:
     branches:
