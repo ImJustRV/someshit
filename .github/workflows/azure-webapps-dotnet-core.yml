@@ -27,7 +27,6 @@ env:
   name: Azure Login
   uses: Azure/login@v1
 
-
 on:
   push:
     branches:
